@@ -1,0 +1,54 @@
+/* 
+  Localizable.strings
+  TheCitadel
+
+  Created by Mateusz Popiało on 08/12/2018.
+  Copyright © 2018 Mateusz Popiało. All rights reserved.
+*/
+
+"errorInvalidJSON" = "The data returned from our service was malformed. We're working on it.";
+"errorNoData" = "The service seems to be temporarily unavailable. Please try again later.";
+"errorOpNotSupported" = "This operation is not supported at this time. Try again later";
+"authorSection" = "Author";
+"frameworks" = "Frameworks";
+"aboutApp" = "About app";
+
+"charactersTabTitle" = "Characters";
+"booksTabTitle" = "Books";
+"moreTabTitle" = "More";
+
+"name" = "Name";
+"gender" = "Gender";
+"culture" = "Culture";
+"born" = "Born";
+"died" = "Died";
+"actor" = "Played by";
+"tvSeries" = "TV series appearances";
+
+"about" = "About";
+"aliases" = "Aliases";
+"titles" = "Titles";
+"mother" = "Mother";
+"father" = "Father";
+"spouse" = "Spouse";
+"books" = "Books";
+"povBooks" = "Books with point of view chapters";
+"allegiances" = "Allegiances";
+
+//MARK: - Filters
+"searchPlaceholder" = "Name";
+"searchCancelButtonTitle" = "Done";
+
+
+"alive" = "Alive";
+"dead" = "Dead";
+"all" = "All";
+
+"connectivityProblems" = "Oops!";
+
+"uknown" = "Unknown";
+"or" = "or";
+
+//MARK: - Errors
+"commonErrorTitle" = "Oops!";
+"commonErrorDesc" = "It looks like you're not connected to the internet or our service is unavailable.";

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoConnectionViewController" customModule="TheCitadel" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="wGo-Uy-Ijv" id="SQN-ba-5Fg"/>
+                <outlet property="goToSettingsButton" destination="DwS-TN-wK0" id="eoX-QY-yCV"/>
+                <outlet property="orLabel" destination="lqC-Kl-hby" id="NET-0t-FP4"/>
+                <outlet property="titleLabel" destination="v4J-Ak-Oin" id="mO8-dL-yXI"/>
+                <outlet property="tryAgainButton" destination="3eQ-j0-N7m" id="09n-ke-7tV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4J-Ak-Oin">
+                    <rect key="frame" x="156.5" y="169" width="62.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It looks like you're not connected to the internet or our service is unavailable. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-Uy-Ijv">
+                    <rect key="frame" x="32" y="199.5" width="311" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqC-Kl-hby">
+                    <rect key="frame" x="180" y="324.5" width="15" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eQ-j0-N7m">
+                    <rect key="frame" x="87.5" y="272.5" width="200" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="P9G-yc-2zx"/>
+                        <constraint firstAttribute="width" constant="200" id="xVR-sB-smc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Try again"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwS-TN-wK0">
+                    <rect key="frame" x="87.5" y="350.5" width="200" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Mey-qa-UNe"/>
+                        <constraint firstAttribute="width" constant="200" id="bCr-hq-fXq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Check your connection"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v4J-Ak-Oin" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Ly-Bm-B5I"/>
+                <constraint firstItem="wGo-Uy-Ijv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="9vd-H9-XAW"/>
+                <constraint firstItem="3eQ-j0-N7m" firstAttribute="top" secondItem="wGo-Uy-Ijv" secondAttribute="bottom" constant="32" id="Bs0-uy-iN1"/>
+                <constraint firstItem="lqC-Kl-hby" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DLg-KS-usl"/>
+                <constraint firstItem="DwS-TN-wK0" firstAttribute="top" secondItem="lqC-Kl-hby" secondAttribute="bottom" constant="8" id="Jb8-lI-AhI"/>
+                <constraint firstAttribute="trailing" secondItem="wGo-Uy-Ijv" secondAttribute="trailing" constant="32" id="eCq-hp-wTJ"/>
+                <constraint firstItem="3eQ-j0-N7m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f2h-2c-8Ne"/>
+                <constraint firstItem="wGo-Uy-Ijv" firstAttribute="top" secondItem="v4J-Ak-Oin" secondAttribute="bottom" constant="4" id="f4K-mM-v0q"/>
+                <constraint firstItem="wGo-Uy-Ijv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mUy-TL-VQa"/>
+                <constraint firstItem="DwS-TN-wK0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nnN-21-eqW"/>
+                <constraint firstItem="lqC-Kl-hby" firstAttribute="top" secondItem="3eQ-j0-N7m" secondAttribute="bottom" constant="8" id="r7R-Zl-YWN"/>
+                <constraint firstItem="lqC-Kl-hby" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wTo-kN-eWg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
